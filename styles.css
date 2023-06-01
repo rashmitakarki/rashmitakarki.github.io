@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+:root {
+    --primary-color: #ADD8E6;  /* light blue*/
+    --secondary-color: #000080; /*navy */
+    --text-color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ADD8E6;
+    color: var(--text-color);
+}
+
+.container {
+    padding:10px 10%;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    right: 60px;
+    color: var(--secondary-color);
+}
+
+.admin-image{
+    border-radius: 50%;
+    max-width: 35%;
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+.content {
+    text-align: center;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0px;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Contact Section */
+.contact-one{
+    flex-basis: 35%;
+}
+
+.contact-two {
+    flex-basis: 65%;
+}
+
+.contact-one h1 {
+    font-size: 50px;
+}
+
+.contact-one p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact-one i {
+    color: var(--secondary-color);
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.socials{
+    margin-top: 35px;
+}
+
+.socials a{
+    transition: transform 0.5s;
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.socials i{
+    font-size: 40px;
+}
+
+.socials a:hover{
+    transform: translateY(-10px);
+}
+
+.contact-one form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    color: var(--text-color);
+    padding: 15px;
+    margin: 15px 0;
+    background-color:#fff;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .btn{
+    padding: 14px 60px;
+    border-radius: 5px;
+    border: none;
+    background: var(--secondary-color);
+    cursor: pointer;
+    margin-top: 20px;    
+    font-size: 20px;
+    color: #fff;
+}
