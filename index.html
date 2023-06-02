@@ -14,12 +14,14 @@
     <div id="home">
         <div class="container">
             <nav>
-                <a href="#"><h1 class="logo">Rash<span>mita</span></h1></a>
-                <ul>
+                <a href="/index.html"><h1 class="logo">Rash<span>mita</span></h1></a>
+                <ul id="menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#academics">Academics</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closenav()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars" onclick="opennav()"></i>
             </nav>
             <img class="admin-image" src="images/pale-pink.png" alt="main-image">
             <div class="content">
@@ -28,6 +30,77 @@
             </div>
         </div>
     </div>
+
+    <!--About Section-->
+    <div id="about">
+        <div class="container">
+            <h1 class="main-title">About Me</h1>
+            <div class="about">
+                <div class="detail">
+                    <h1>About</h1>
+                    <p class="detail">
+                        Hello, I am Rashmita Karki, a 2nd year student pursuing my Bachelor's degree in Nepal Commerce Campus,
+                        currently in 3rd semester. My major is BBA Finance where I am doing courses like Finance, Accounting, Economics,
+                        Psychology, Database, Marketing and Insurance.
+                        I am very interested to work in this field to explore more about it. I have many interests and skills from Finance, Accounting
+                        to Computer skills and Leadership.
+                    </pclass>
+                </div>
+                <div class="experience">
+                    <h1>Experiences</h1>
+                    <ul>
+                        <li>Volunteer at Youth Red Cross</li>
+                        <li>Receptionist at Aasha Hearing Aid</li>
+                        <li>Member of Youth Red Cross Circle</li>
+                    </ul>
+                    <div class="interest">
+                        <h1>Interests</h1>
+                        <ul>
+                            <li>Learning Finance</li>
+                            <li>Travelling</li>
+                            <li>Reading Books</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Academics Section -->
+    <div id="academics">
+        <div class="container">
+            <h1 class="main-title">Academics</h1>
+            <div class="academics">
+                <div class="year">
+                    <h1 class="title">Year</h1>
+                    <ol id="list1" class="ordered-list">
+                        <li class="item">2022-2026</li>
+                        <li class="item">2019-2021</li>
+                        <li class="item">2009-2019</li>
+                    </ol>
+                </div>
+                <div class="institution">
+                    <h1 class="title">Institution</h1>
+                    <ol id="list2" class="ordered-list">
+                        <li class="item">Nepal Commerce Campus</li>
+                        <li class="item">Bernhardt College</li>
+                        <li class="item">Vidya Mandir School</li>
+                    </ol>
+                </div>
+                <div class="major">
+                    <h1 class="title">Major</h1>
+                    <ol id="list3" class="ordered-list">
+                        <li class="item">BBA (Finance)</li>
+                        <li class="item">Business - Management</li>
+                        <li class="item">Account and Economics</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
     <div id="contact">
         <div class="container">
             <div class="contact">
@@ -50,5 +123,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
