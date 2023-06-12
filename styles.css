@@ -113,6 +113,7 @@ nav ul li a:hover::after {
 .main-title{
     font-size:50px;
     text-align: center;
+    margin-top: 80px;
 }
 
 .about {
