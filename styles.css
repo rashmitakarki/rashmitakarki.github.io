@@ -50,6 +50,10 @@ nav ul li{
     margin: 10px 20px;
 }
 
+.imposter{
+    padding-top: 20px;
+}
+
 nav ul li a {
     font-size: 20px;
     position: relative;
@@ -264,6 +268,7 @@ form .btn{
     nav .fas{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
 
     nav ul{
