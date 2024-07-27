@@ -135,6 +135,7 @@ nav ul li a:hover::after {
 
 .detail p{
     text-align: justify;
+    word-spacing: -5px;
 }
 
 .experience, .interest{
@@ -164,7 +165,9 @@ ol li{
     padding:60px 0;
 }
 
-
+#list1 li, #list3 li {
+    padding: 10px 0;
+}
 
 .item{
     font-size: 25px;
@@ -181,6 +184,7 @@ ol li{
     padding: 50px 0;
     flex-basis: 30%;
 }
+
 
 .year {
     text-align: center;
@@ -303,7 +307,7 @@ form .btn{
         flex-basis:100%;
     }
 
-    .socials, .item{
+    .item{
         text-align: center;
     }
     
