@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2: Birthday Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hearts-container"></div>
+        <h1>Answer These Questions!</h1>
+        <p>You need to get all three correct to move to the next step. 😊</p>
+        
+        <div class="quiz">
+            <div class="question">
+                <p>1. What is our favorite food?</p>
+                <input type="text" id="q1">
+            </div>
+            <div class="question">
+                <p>2. What was the first gift I gave you?</p>
+                <input type="text" id="q2">
+            </div>
+            <div class="question">
+                <p>3. When was the last time we met (Hint: Day)?</p>
+                <input type="text" id="q3">
+            </div>
+            <button id="submit-btn">Next Step</button>
+        </div>
+        
+        <p id="message"></p>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
