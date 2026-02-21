@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You 💗</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body class="bg-opening">
+  <div class="center">
+    <div class="shell">
+      <div class="card">
+        <div id="locked">
+          <h1 class="h1">Press to Unlock 8 Years of Us !</h1>
+          <p class="p">A small universe made just for you.</p>
+          <div class="row">
+            <button class="btn btn-solid" id="unlockBtn">Unlock</button>
+          </div>
+
+        </div>
+
+        <div id="unlocked" class="fade" style="display:none;">
+          <h1 class="h1">From two kids in grade 9</h1>
+          <p class="p" style="white-space:pre-line; font-size:18px;">
+            <span id="tw"></span>
+          </p>
+
+          <div class="row">
+            <a class="btn btn-solid" href="timeline.html">Start our journey →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    document.getElementById("unlockBtn").addEventListener("click", () => {
+      // Start music on unlock (user gesture)
+    //   toggleMusic();
+
+      document.getElementById("locked").style.display = "none";
+      const u = document.getElementById("unlocked");
+      u.style.display = "block";
+      showFade("unlocked");
+
+      typewriter(
+        document.getElementById("tw"),
+        "to almost graduates and still choosing each other.",
+        24
+      );
+    });
+  </script>
+</body>
+</html>
