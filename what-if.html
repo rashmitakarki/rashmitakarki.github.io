@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What If</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body class="bg-black">
+  <audio id="bgm" src="assets/music.mp3" loop preload="auto"></audio>
+  <button id="musicBtn" class="music-btn" onclick="toggleMusic()">▶ Music</button>
+
+  <div class="center">
+    <div class="shell">
+      <div class="card" style="background: rgba(255,255,255,0.06);">
+        <h1 class="h1">What if we never met in grade 9?</h1>
+
+        <p class="p" style="white-space: pre-line; font-size: 18px;">
+          <span id="whatIfText"></span>
+        </p>
+
+        <div class="row">
+          <a class="btn" href="reasons.html">← Back</a>
+          <a class="btn btn-solid" href="vault.html">Next: Memory Vault →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+    typewriter(
+    document.getElementById("whatIfText"),
+    "I would have never learned patience.\n" +
+    "I would have never understood loyalty.\n" +
+    "I would have never taken my future this seriously.\n\n" +
+    "You made me more responsible.\n" +
+    "You made me think long term.\n" +
+    "You made me steady.\n\n" +
+    "When you overthink,\n" +
+    "you worry about everything.\n" +
+    "But you still choose us.\n\n" +
+    "You didn’t just love me.\n" +
+    "You gave me stability.\n\n" +
+    "Thank you for growing with me.",
+    22
+    );
+    });
+  </script>
+</body>
+</html>

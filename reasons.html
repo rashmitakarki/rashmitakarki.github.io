@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>23 Reasons</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body>
+  <audio id="bgm" src="assets/music.mp3" loop preload="auto"></audio>
+  <button id="musicBtn" class="music-btn" onclick="toggleMusic()">▶ Music</button>
+
+  <div class="center">
+    <div class="shell">
+      <div class="card">
+        <h1 class="h1">23 Reasons Why I Love You</h1>
+        <p class="p">Tap a card to reveal the reason.</p>
+
+        <div class="grid" id="reasonsGrid"></div>
+
+        <div class="row">
+          <a class="btn" href="timeline.html">← Back</a>
+          <a class="btn btn-solid" href="what-if.html">Next: What If →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    const reasons = [
+      "You believed in me when I didn’t.",
+      "You support me in my failure.",
+      "You look the cutest when you’re angry.",
+      "You make my world softer.",
+      "You care in small ways that matter a lot.",
+      "You stayed when life got messy.",
+      "You make ‘home’ feel like a person.",
+      "You understand me without needing long explanations.",
+      "You make me want to be better.",
+      "You are kind, even when you are tired.",
+      "You are my calm and my chaos (the cute kind).",
+      "You turned ordinary days into memories.",
+      "You forgive and you teach love.",
+      "You are my best friend first.",
+      "You make me laugh for real.",
+      "You make effort look natural.",
+      "You are honest and still gentle.",
+      "You are my safe place.",
+      "You’re cute and you know it.",
+      "You made growing up feel less scary.",
+      "You never gave up on us.",
+      "You love with loyalty.",
+      "You are you, and that’s my favorite."
+    ];
+
+    const grid = document.getElementById("reasonsGrid");
+    reasons.forEach((text, i) => {
+      const card = document.createElement("div");
+      card.className = "reason";
+      card.dataset.open = "0";
+      card.innerHTML = `
+        <div class="top">Tap to flip #${i+1}</div>
+        <div class="body">💗</div>
+      `;
+      card.addEventListener("click", () => {
+        const open = card.dataset.open === "1";
+        card.dataset.open = open ? "0" : "1";
+        card.querySelector(".top").textContent = open ? `Tap to flip #${i+1}` : `Reason #${i+1}`;
+        card.querySelector(".body").textContent = open ? "💗" : text;
+      });
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+  <style>
+    .letter{
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.18);
+    }
+    .letter p{
+      margin: 10px 0 0;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.85;
+      font-size: 16px;
+      white-space: pre-line;
+    }
+    .sig{
+      margin-top: 14px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.92);
+    }
+    .sig span{
+      color: rgba(255, 121, 178, 0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <div class="shell">
+      <div class="card">
+        <h1 class="h1">Happy 23rd Birthday, <span id="herName">My Love</span> 💗</h1>
+
+        <p class="p" style="margin-top:12px;">
+          This is my little note for you, the kind you can come back to whenever your mind gets loud.
+        </p>
+
+        <div class="letter">
+          <p id="wishText"></p>
+          <div class="sig">Always yours, <span id="myName">Uttam</span></div>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-solid" id="chooseBtn">Will you keep choosing me?</button>
+          <a class="btn" href="birthday.html">Restart</a>
+        </div>
+
+        <p class="p" id="alwaysText" style="display:none; margin-top:14px; font-weight:900; font-size:20px;">
+          Always. 💖
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    // Customize these quickly
+    document.getElementById("herName").textContent = "Rashmita";
+    document.getElementById("myName").textContent = "Uttam";
+
+    const wish =
+`Happy 23rd Birthday, my love.
+
+Eight years.
+
+Sometimes I sit and think about that number, and it feels unreal. We were just kids when this started. We didn’t know what love truly meant. We didn’t know how hard life would get. We didn’t know how much we would change.
+
+But somehow, through every version of us, we kept choosing each other.
+
+We have fought over small things.
+We have overthought situations.
+We have misunderstood each other.
+We have blocked, unblocked, argued, and sometimes stayed silent longer than we should have.
+
+But even in those moments, one thing never changed — we never wanted to lose each other.
+
+And that is something I will never take for granted.
+
+You have shaped me more than you realize.
+You made me more patient.
+You made me more responsible.
+You made me think long-term.
+You made me take my career seriously.
+You made me want to build something stable — not just for myself, but for us.
+
+When I think about my future, you are there.
+Not as a possibility.
+But as a plan.
+
+I know we are not perfect.
+I know we still have things to work on.
+And I promise you this — I am not afraid of that work.
+
+I want to fix every issue we face.
+I want to learn better communication.
+I want to handle fights more maturely.
+I want to understand you more deeply.
+I want to grow into a man who makes you feel secure and proud.
+
+We will work on ourselves.
+We will work on our dreams.
+We will build something real.
+And one day, we will look back and smile knowing we didn’t give up when it was hard.
+
+I want us to build a life that makes our families proud.
+A life where our hard work shows.
+A life where our love feels peaceful, not rushed.
+A life where we are each other’s biggest support.
+
+You don’t have to carry your overthinking alone.
+You don’t have to be strong every second.
+You don’t have to hide your fears.
+I will always be there for you.
+
+For your doubts.
+For your dreams.
+For your bad days.
+For your silent days.
+For the days when you feel confident.
+And for the days when you don’t.
+
+Thank you for loving me the way you do.
+Thank you for staying.
+Thank you for choosing us even when it’s not easy.
+Thank you for every small effort you’ve given.
+
+I see it.
+I appreciate it.
+And I will never treat it lightly.
+
+On your 23rd birthday, I don’t just wish you happiness.
+I wish you peace.
+I wish you confidence.
+I wish you success.
+I wish you calmness in your heart.
+I wish you a future where you feel proud of yourself.
+
+And I promise to walk beside you while we build it.
+
+We started as kids.
+We stayed as partners.
+We grew as best friends.
+
+And I still choose you.
+Not just today.
+But in every version of our future.
+
+Happy Birthday, my love.
+`;
+
+    document.getElementById("wishText").textContent = wish;
+
+    document.getElementById("chooseBtn").addEventListener("click", () => {
+      document.getElementById("alwaysText").style.display = "block";
+      heartBurst(34);
+    });
+  </script>
+</body>
+</html>
