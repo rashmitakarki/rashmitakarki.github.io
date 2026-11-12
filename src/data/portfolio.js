@@ -52,7 +52,7 @@ export const portfolio = {
   interests: [
     "Public Service Commission",
     "Finance",
-    "Foreign Affairs",
+    "Government Services",
     "Reading",
     "Traveling",
   ],
