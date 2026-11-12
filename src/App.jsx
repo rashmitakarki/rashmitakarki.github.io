@@ -69,7 +69,7 @@ function Hero() {
           <p className="hero-subtitle">
             Finance graduate with an interest in
             <br />
-            foreign affairs.
+            government services.
           </p>
 
           <p className="hero-description">

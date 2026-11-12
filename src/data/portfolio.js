@@ -1,11 +1,11 @@
 
 export const portfolio = {
   name: "Rashmita Karki",
-  tagline: "Finance Graduate | Accounting | Foreign Affairs",
+  tagline: "Finance Graduate | Accounting | Government Services",
   location: "Kathmandu, Nepal",
 
   introduction:
-    "I'm a BBA Finance graduate with experience in accounting and administration. My interests lie in finance, foreign affairs and understanding how institutions work.",
+    "I'm a BBA Finance graduate with experience in accounting and administration. My interests lie in finance, government services and understanding how institutions work.",
 
   about:
     "I graduated with a Bachelor of Business Administration in Finance from Nepal Commerce Campus. Alongside my studies, I gained practical experience in accounting at DayJoy Nepal, worked at Asha Hearing and Speech Center, and volunteered with the Youth Red Cross Circle.",
