@@ -20,7 +20,7 @@ export const portfolio = {
     {
       role: "Receptionist",
       organization: "Asha Hearing and Speech Center",
-      period: "2 years",
+      period: "1 year",
       description: "Handled reception duties and administrative coordination.",
     },
     {
